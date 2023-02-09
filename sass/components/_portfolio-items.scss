@@ -29,8 +29,8 @@
 }
 }
 .experience__box{
-   
- 
+    
+  
     position: relative;
     overflow: hidden;
 
@@ -116,6 +116,8 @@
 }
 @media screen and (min-width:768px) {
     .experience__items{
+        display: flex;
+        flex-grow: 1;
         width: 354px;
     }
     .experience__box{

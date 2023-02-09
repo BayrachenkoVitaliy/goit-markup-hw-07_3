@@ -670,6 +670,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .experience__items {
+    display: flex;
+    flex-grow: 1;
     width: 354px;
   }
   .experience__box {
@@ -712,6 +714,7 @@ img {
   right: 15px;
   border: none;
   background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobail-menu__close-btn:hover, .mobail-menu__close-btn:focus {
   color: var(--accent__color);
@@ -728,6 +731,7 @@ img {
 
 .mobail-menu__link {
   color: var(--maine__color__dark);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -815,6 +819,7 @@ img {
     width: 40px;
     height: 40px;
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(0, 0, 0, 0);
   }
   .header__mobail-btn:hover, .header__mobail-btn:focus {
@@ -861,8 +866,7 @@ img {
   align-items: center;
   background-color: var(--backgroundcolor__dark);
   margin: 0 auto 0 auto;
-  max-width: 480px;
-  max-height: 400px;
+  /*  max-height: 400px; */
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagesmobopt/hero-mob-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
