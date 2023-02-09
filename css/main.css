@@ -583,7 +583,9 @@ img {
 }
 
 .experience__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0px;
   padding: 0px;
@@ -617,6 +619,11 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+}
+
+.overley {
+  display: flex;
+  flex-grow: 1;
 }
 
 .overley__text {
