@@ -143,6 +143,7 @@
 }
     
 .button__form{
+    display: block;
     @extend %button;
 
     min-width: 200px;
@@ -151,7 +152,7 @@
     margin-right: auto;
     padding: 10px;
     border: none;
-    display: block;
+   
 
 &:hover{
     cursor: pointer;

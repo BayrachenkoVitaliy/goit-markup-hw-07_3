@@ -344,7 +344,7 @@ img {
     top: 50%;
     width: 523px;
     transform: translate(-50%, -50%);
-    width: 528px;
+    max-width: 528px;
     padding: 40px;
     height: 581px;
   }
@@ -485,13 +485,13 @@ img {
 }
 
 .button__form {
+  display: block;
   min-width: 200px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   border: none;
-  display: block;
 }
 .button__form:hover {
   cursor: pointer;
