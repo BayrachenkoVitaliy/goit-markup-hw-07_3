@@ -71,6 +71,8 @@
 .overley{
     display: flex;
     flex-grow: 1;
+    overflow: auto;
+    
 }
 .overley__text{
     padding: 64px 24px;
@@ -79,10 +81,11 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--maine__color__light);
+    
 }
 .experience__description{
     
-    margin-top: 20px;
+    flex-grow:1;
      padding: 20px 20px;
      border-right: 1px solid #EEEEEE;
      border-bottom: 1px solid #EEEEEE;

@@ -1,36 +1,57 @@
+
+.form-modal{
+    width: 100%;
+    overflow-y: visible;
+}
+
 .form__title{
     margin-bottom: 12px;
     
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
-    text-align: center;
+    color:var(--maine__color__dark);
+    
 }
 
 .label{
     margin-bottom: 10px;
     display: block;
+    width: 100%;
     
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--maine__color__secondery);
-    font-size: 12px;
+  
 }
     
 .label__box {
     position: relative;
     margin-top: 4px;
     display: block;
+    
+}
+.label{
+    width: 100%;
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+
+color:var(--maine__color__secondery);
+
+
 }
 
 .label__field{
-    width: 100%;
+   width: 100%;
     height: 40px;
     outline: none;
     display: block ;
+    margin-left: 5px;
         
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 35px;
@@ -91,9 +112,10 @@
 }
 
 .consent{
+    display: flex;
     align-items: center;
     margin-bottom: 30px;
-    display: flex;
+   
 
     font-weight: 400;
     font-size: 12px;
@@ -165,18 +187,16 @@
     .consent__text{
         font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     }
     
 }
 
 @media screen and (min-width:768px) {
+   
     .consent__text{
-        font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
+       
        
     }
 }
@@ -186,5 +206,10 @@
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
+    }
+    .form__title{
+        form__title{
+            line-height: 1.15;  
+        }
     }
 }

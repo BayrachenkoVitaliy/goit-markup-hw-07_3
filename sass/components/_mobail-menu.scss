@@ -5,19 +5,26 @@
 .mobail-menu{
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
     width: 100%;
-    height: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    background-color:  var(--maine__color__light);
     z-index: 200;
     opacity: 1;
 }
-.mobail-menu__conteiner{
+/* .mobail-menu__conteiner{
     padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
 
     background-color: var(--maine__color__light);
-}
+} */
 
 .mobail-menu__close-btn{
     position: absolute;
@@ -35,16 +42,14 @@
 .mobail-menu__icone-close{
     fill: currentColor;
 }
-.mobail-menu__list{
-    @extend %list;
-    margin-bottom: 302px;
-}
+
 
 .mobail-menu__link{
     @extend %link;
     color: var(--maine__color__dark) ;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
 font-size: 40px;
 line-height: 47px;
@@ -54,6 +59,13 @@ letter-spacing: 0.02em;
 &:focus{
     color: var(--accent__color);
     }
+}
+
+.mobail-menu__items:not(:last-child)::after{
+    content: '';
+ width: 22px;
+ border: 1px #212121;
+ 
 }
 
 .mobail-menu__items:not(:last-child){
@@ -70,7 +82,7 @@ letter-spacing: 0.02em;
 }
 .mobail-menu__link-contact{
     @extend %link;
-    color: var(--maine__color__secondary);
+    color: var( --maine__color__secondery);
 
     &:hover,&:focus{
         color: var(--accent__color);
@@ -81,25 +93,49 @@ letter-spacing: 0.02em;
 .mobail-menu__tel{
 font-weight: 500;
 font-size: 34px;
-line-height: 40px;
+line-height: 1.18;
 
 letter-spacing: 0.02em;
 
 color: var(--accent__color);
 }
 .mobail-social{
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .mobail-social__items{
+    display: flex;
+    position: relative;
     @extend %list;
+    width: auto;
+    padding: 10px 0 0 0;
 
-    &:not(:last-child){
-        margin-right: 20px;
+    /* &:not(:last-child){
+        margin-right: 10px;
+    } */
+    &:not(:last-child)::after{
+        content: '';
+        
+        display: block;
+       
+       /*  position: absolute;
+        right: auto;
+        top: auto; */
+        margin: auto 0 auto 0;
+        transform: rotate(90deg);
+     width: 22px;
+     
+     height: 1px;
+     background-color:  rgba(33, 33, 33,0.2);
     }
 }
+
 .mobail-social__link{
     display: block;
     @extend %link;
+
+    
 
     color: var(--accent__color);
 }

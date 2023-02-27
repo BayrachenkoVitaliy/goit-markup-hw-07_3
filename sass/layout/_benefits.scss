@@ -79,7 +79,9 @@
        .benefits__items{
         flex-basis: 270px;
         margin-left: 30px;
-        margin-bottom: 0;
+        &:nth-child(-n+2){
+            margin-bottom: 0px;
+        }
         
        }
        .benefits{
